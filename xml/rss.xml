@@ -1,0 +1,29 @@
+﻿<rss version="2.0">
+	<channel>
+		<item>
+			<title>Poćetna</title>
+			<link>http://angola-djordjetaskovicict.free.nf/index.html</link>
+			<description>Dođite naš restoran!!!</description>
+		</item>
+		<item>
+			<title>Meni</title>
+			<link>http://angola-djordjetaskovicict.free.nf/meni.html</link>
+			<description>Svakog dana novi popusti koji su sveži kao i naša hrana!</description>
+		</item>
+		<item>
+			<title>Rezervacija</title>
+			<link>http://angola-djordjetaskovicict.free.nf/Rezervacija.html</link>
+			<description>Rezervišite mesto u našem restoranu!!!</description>
+		</item>
+		<item>
+			<title>Galerija</title>
+			<link>http://angola-djordjetaskovicict.free.nf/galerija.html</link>
+			<description>Pogledajte slike iz naše galerije!!</description>
+		</item>
+		<item>
+			<title>Autor</title>
+			<link>http://angola-djordjetaskovicict.free.nf/autor.html</link>
+			<description>Saznajte nešto o autoru sajta.</description>
+		</item>
+	</channel>
+</rss>
