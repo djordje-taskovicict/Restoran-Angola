@@ -1,0 +1,493 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Roboto';
+       src:  url('appdata/Font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+  }
+  @keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-down {
+    animation: slideInFromTop 1s ease-in-out forwards;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: Roboto ;
+}
+ul {
+    float: right;
+    list-style-type: none;
+}
+#menu {
+display:flex;
+align-items:center;
+justify-content:right;
+}
+.lista li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+    padding-left:10px;
+    font-size:20px;
+}
+.aktiv {
+    border-bottom: solid 2.5px black;
+}
+.blok:hover{
+    opacity:0.7;
+}
+.lista a {
+    text-decoration: none;
+    text-align:center;
+    color:black;
+}
+#logo {
+    cursor:pointer;
+    padding-left: 50px;
+    width:60px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #68B25F;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    font-size: large;
+    background-color: #68B25F;
+    bottom:0;
+    margin-top:20px;
+    padding-top:20px;
+    text-align:center;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+}
+    footer ul li {
+        display:inline;
+        list-style:none;
+    }
+    .tekst {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+.ikona {
+    display:inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#slika {
+    border: 2px solid #68B25F;
+    height: calc(100% - 4px);
+    border-radius: 40px;
+}
+
+#naslov {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 5px;
+}
+#glavna {
+    height: auto;
+    display: flex;
+    width: 100%;
+    background-color: #C6EEBF;
+    border-radius: 40px;
+}
+#levi-blok{
+    height: 276px;
+    padding-right: 15px;
+}
+
+.cistac {
+    clear: both;
+    padding-bottom:84px;
+}
+h1{
+    font-size:40px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+}
+.glavni-tekst {
+    word-wrap: break-word;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.o-nama-naslov {
+    color: #7CC0BE;
+    font-size: xx-large;
+    padding-top: 10px;
+}
+#container-o-nama{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#galerija-pocetna {
+    width: 100%;
+    height: auto;
+    background-color: #C6EEBF;
+    border-radius: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+.naslov-galerija {
+    color: #7CC0BE;
+    padding-top: 10px;
+    font-size: 80px;
+}
+.centar {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+}
+.slika-galerija {
+    width: 300px;
+    height: 200px;
+    border: 5px solid #68B25F;
+    border-radius: 40px;
+    cursor: pointer;
+    transition:width 1s, height 1s, transform 1s;
+}
+.slika-galerija:hover{
+    width:300px;
+    height:200px;
+    transform:scale(1.1);
+}
+.razmak-galerija {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#button1 {
+    width: 150px;
+    height: 40px;
+    background-color: #c0c1c1;
+    font-size: large;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#rezervacija-pocetna {
+    height: 455px;
+    width: 100%;
+    background-color: #C6EEBF;
+    border-radius: 40px;
+}
+#rezervacija-slika {
+    float: left;
+    width: 300px;
+    height: 450px;
+    border: 4px solid #68B25F;
+    border-radius: 40px;
+}
+.rezervacija-naslov {
+    padding-top: 20px;
+    color: #7CC0BE;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration:none;
+}
+.rezervacija-tekst {
+    word-wrap: break-word;
+    font-size: large;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/*Ostale stranice*/
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#centriraj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+#centriraj_galerija {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+#autor {
+    width: 60%;
+    background-color: #C6EEBF;
+    height: auto;
+    border-radius: 40px;
+}
+.main-glavna {
+    width: 60%;
+    height: 100%;
+    border-radius: 40px;
+}
+#galerija {
+    padding-top:50px;
+    width: 90%;
+    background-color: #C6EEBF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    border-radius: 40px;
+}
+.galery-item{
+    width: auto;
+    margin: 55px;
+}
+.galery-item-content-omotac:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px !important;
+}
+.galery-img{
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.gornja-slika{
+    background-size:100%;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.sekcija-opis{
+    width: 100%;
+}
+.div-naslov{
+    background-color: #68B25F;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+.div-opis{
+    background-color: #68B25F;
+    padding:10px 5px 10px 5px;
+    padding-left:10px;
+
+}
+.div-cena{
+    padding: 10px 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: right;
+    background-color:#8CA0A7 ;
+}
+#meni {
+    width: 70%;
+    background-color: #C6EEBF;
+    height: auto;
+    border-radius: 40px;
+}
+.naslov-menia{
+    font-size: 35px;
+    padding-left: 15px;
+    padding-top: 10px;
+    display: flex;
+    justify-items: right;
+    color:#8CA0A7;
+}
+.meni-item{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-items: right;
+}
+.form-element-check-div{
+    display: flex;
+    justify-content: center;
+justify-content:space-between;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.form-element-check-div p{
+    display: block; 
+}
+#rezervacija {
+    width: 70%;
+    background-color: #C6EEBF;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    padding-bottom:15px;
+}
+.sekcija-forma{
+    margin: 50px;
+    width: 400px;
+}
+.form-element{
+    margin: 5px 0px;
+    display: block;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 999px;
+}
+select{
+        width: 100%;
+        padding: 7px;
+        border-radius: 999px;
+
+}
+.form-element-name-div{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form-element-input-div:hover{
+    box-shadow: 2px 2px 4px rgba(104, 178, 95, 0.5);
+}
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 7px;
+    resize: none;
+}
+.div-ime-prezime{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 200px;
+    margin-top: 25px;
+}
+.button:hover{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: #68B25F;
+color:white;
+
+}
+
+.slika-autora {
+    width: 400px;
+    height: 452px;
+    border: 5px solid #68B25F;
+    border-radius: 40px;
+    float: left;
+}
+aiside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height:100%;
+}
+#left {
+    left:0;
+}
+#right {
+right:0;
+}
+.as-glavna{
+    width:20%;
+}
+.as-meni {
+    width: 30%;
+}
+.as-autor {
+    width: 20%;
+}
+.as-galerija{
+    width:5%;
+}
+.as-rezervacija{
+    width:20%;
+}
+#naslov1 {
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+textarea{
+    border-radius:20px;
+}
+#autor-tekst{
+    word-wrap:normal;
+    font-weight:bold;
+    font-size:x-large;
+}
+.cistac1 {
+    padding-bottom: 70px;
+}
+
+.napomena {
+    width: 400px;
+    height: 150px;
+    resize: none;
+}
+label{
+    font-size:20px;
+    font-weight:bold;
+}
+.textbox{
+    width:250px;
+    height:20px;
+    border-radius:45px;
+}
+#submit {
+    width: 150px;
+    height: 40px;
+    background-color: #c0c1c1;
+    font-size: large;
+    border-radius: 40px;
+    border: 2px solid 68B25F;
+    cursor: pointer;
+}
+ a : -webkit-any-link {
+    cursor: pointer;
+
+}
+.valuta{
+    font-size: 9px;
+}
